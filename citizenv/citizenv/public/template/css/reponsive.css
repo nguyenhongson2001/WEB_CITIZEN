@@ -1,0 +1,136 @@
+@media only screen and (min-width: 1225px) {
+    .main-content {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 1224px) {
+    .page-wrapper::before {
+        height: 70px;
+        z-index: -1;
+        border-radius: 0px 0px 0px 0px;
+    }
+
+    .sidebar {
+        left: -280px;
+        overflow-y: auto;
+        z-index: 1;
+    }
+
+    #menu-toggle:checked ~ .sidebar {
+        top: 70px;
+        left: 0;
+        background: #7cb1b7;
+        scroll-behavior: auto;
+        box-shadow: var(--shadow);
+    }
+
+    .menu-item a span {
+        color: #333;
+    }
+
+    .main-content {
+        margin-left: 0;
+    }
+
+    #menu-toggle:checked ~ .main-content{
+        opacity: 0.4;
+    }
+
+    .main-content header {
+        position: fixed;
+        z-index: 1;
+        padding: 0 17px;
+        display: flex;
+        flex-direction: space-between;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        width: 100%;
+        box-shadow: var(--shadow);
+        background: var(--color-main);
+    }
+
+    .main-content main {
+        margin-top: 70px;
+        background: #bad2c6;
+        padding: 0.2px 35px;
+        border-radius: 10px 10px 10px 10px;
+        box-shadow: var(--shadow);
+    }
+
+    main .page-header {
+        color: #333;
+    }
+
+    .sidebar-menu {
+        margin-top: -5rem;
+    }
+
+    .page-wrapper {
+        display: inline-block;
+    }
+
+}
+
+@media(max-width:738px) {
+    .reponsive-form {
+        flex-direction: column;   
+    }
+
+    .row-group2, .row-group3 {
+        width: 100%;
+    }
+
+    #doimatkhau form .button input {
+        margin-left: 0;
+    }
+
+}
+
+@media screen and (max-width: 1023px) {
+    .analytics, .grid-2 {
+        grid-template-columns: 100%;
+    }
+
+    .all-buttonchart {
+        grid-template-columns: auto auto;
+    }
+}
+
+@media screen and (max-width: 739px) {
+    .all-buttonchart {
+        grid-template-columns: 100%;
+    }
+}
+
+@media(max-width: 654px){
+	.table thead{
+		display: none;
+	}
+
+	.table, .table tbody, .table tr, .table td{
+		display: block;
+		width: 100%;
+	}
+	.table tr{
+		margin-bottom:15px;
+	}
+	.table td{
+		text-align: right;
+		padding-left: 50%;
+		text-align: right;
+		position: relative;
+	}
+	.table td::before{
+		content: attr(data-label);
+		position: absolute;
+		left:0;
+		width: 50%;
+		padding-left:15px;
+		font-size:15px;
+		font-weight: bold;
+		text-align: left;
+	}
+}
